@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\app\\FoxPro\\AsistenteMigracionApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{719BE2F0-A423-488C-8AA8-250D9CB38E25}|AsistenteMigracionApp\\AsistenteMigracionApp.csproj|c:\\app\\foxpro\\asistentemigracionapp\\asistentemigracionapp\\forms\\conexionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{719BE2F0-A423-488C-8AA8-250D9CB38E25}|AsistenteMigracionApp\\AsistenteMigracionApp.csproj|solutionrelative:asistentemigracionapp\\forms\\conexionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{719BE2F0-A423-488C-8AA8-250D9CB38E25}|AsistenteMigracionApp\\AsistenteMigracionApp.csproj|c:\\app\\foxpro\\asistentemigracionapp\\asistentemigracionapp\\forms\\conexionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{719BE2F0-A423-488C-8AA8-250D9CB38E25}|AsistenteMigracionApp\\AsistenteMigracionApp.csproj|solutionrelative:asistentemigracionapp\\forms\\conexionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{719BE2F0-A423-488C-8AA8-250D9CB38E25}|AsistenteMigracionApp\\AsistenteMigracionApp.csproj|c:\\app\\foxpro\\asistentemigracionapp\\asistentemigracionapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{719BE2F0-A423-488C-8AA8-250D9CB38E25}|AsistenteMigracionApp\\AsistenteMigracionApp.csproj|solutionrelative:asistentemigracionapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,26 +35,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ConexionForm.cs",
+              "DocumentMoniker": "C:\\app\\FoxPro\\AsistenteMigracionApp\\AsistenteMigracionApp\\Forms\\ConexionForm.cs",
+              "RelativeDocumentMoniker": "AsistenteMigracionApp\\Forms\\ConexionForm.cs",
+              "ToolTip": "C:\\app\\FoxPro\\AsistenteMigracionApp\\AsistenteMigracionApp\\Forms\\ConexionForm.cs",
+              "RelativeToolTip": "AsistenteMigracionApp\\Forms\\ConexionForm.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvyYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T22:24:30.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConexionForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\app\\FoxPro\\AsistenteMigracionApp\\AsistenteMigracionApp\\Forms\\ConexionForm.cs",
+              "RelativeDocumentMoniker": "AsistenteMigracionApp\\Forms\\ConexionForm.cs",
+              "ToolTip": "C:\\app\\FoxPro\\AsistenteMigracionApp\\AsistenteMigracionApp\\Forms\\ConexionForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AsistenteMigracionApp\\Forms\\ConexionForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T22:02:12.773Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\app\\FoxPro\\AsistenteMigracionApp\\AsistenteMigracionApp\\Form1.cs",
               "RelativeDocumentMoniker": "AsistenteMigracionApp\\Form1.cs",
               "ToolTip": "C:\\app\\FoxPro\\AsistenteMigracionApp\\AsistenteMigracionApp\\Form1.cs",
               "RelativeToolTip": "AsistenteMigracionApp\\Form1.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACkAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAgwGAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-02T20:52:15.683Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\app\\FoxPro\\AsistenteMigracionApp\\AsistenteMigracionApp\\Form1.cs",
               "RelativeDocumentMoniker": "AsistenteMigracionApp\\Form1.cs",
-              "ToolTip": "C:\\Users\\eduardo.camacho\\source\\repos\\AsistenteMigracionApp\\AsistenteMigracionApp\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\Users\\eduardo.camacho\\source\\repos\\AsistenteMigracionApp\\AsistenteMigracionApp\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\app\\FoxPro\\AsistenteMigracionApp\\AsistenteMigracionApp\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AsistenteMigracionApp\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T20:51:03.843Z"
+              "WhenOpened": "2025-05-02T20:51:03.843Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

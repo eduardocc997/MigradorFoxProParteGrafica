@@ -28,3 +28,4 @@ C:\app\FoxPro\AsistenteMigracionApp\AsistenteMigracionApp\obj\Debug\AsistenteMig
 C:\app\FoxPro\AsistenteMigracionApp\AsistenteMigracionApp\obj\Debug\AsistenteMigracionApp.csproj.CoreCompileInputs.cache
 C:\app\FoxPro\AsistenteMigracionApp\AsistenteMigracionApp\obj\Debug\AsistenteMigracionApp.exe
 C:\app\FoxPro\AsistenteMigracionApp\AsistenteMigracionApp\obj\Debug\AsistenteMigracionApp.pdb
+C:\app\FoxPro\AsistenteMigracionApp\AsistenteMigracionApp\obj\Debug\AsistenteMigracionApp.Forms.ConexionForm.resources

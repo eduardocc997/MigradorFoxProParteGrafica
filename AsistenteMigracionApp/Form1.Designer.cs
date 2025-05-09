@@ -32,7 +32,7 @@ namespace AsistenteMigracionApp
             this.components = new System.ComponentModel.Container();
             this.lblEstadoMigracion = new System.Windows.Forms.Label();
             this.panelColorIndicador = new System.Windows.Forms.Panel();
-            this.btnVerificarEstado = new System.Windows.Forms.Button();
+            this.btnConexion = new System.Windows.Forms.Button();
             this.logTimer = new System.Windows.Forms.Timer(this.components);
             this.dgvLog = new System.Windows.Forms.DataGridView();
             this.verificacionProcesoTimer = new System.Windows.Forms.Timer(this.components);
@@ -59,16 +59,15 @@ namespace AsistenteMigracionApp
             this.panelColorIndicador.Size = new System.Drawing.Size(18, 18);
             this.panelColorIndicador.TabIndex = 1;
             // 
-            // btnVerificarEstado
+            // btnConexion
             // 
-            this.btnVerificarEstado.Location = new System.Drawing.Point(12, 10);
-            this.btnVerificarEstado.Name = "btnVerificarEstado";
-            this.btnVerificarEstado.Size = new System.Drawing.Size(139, 23);
-            this.btnVerificarEstado.TabIndex = 2;
-            this.btnVerificarEstado.Text = "Verificar estado";
-            this.btnVerificarEstado.UseVisualStyleBackColor = true;
-            this.btnVerificarEstado.Visible = false;
-            this.btnVerificarEstado.Click += new System.EventHandler(this.btnVerificarEstado_Click);
+            this.btnConexion.Location = new System.Drawing.Point(12, 10);
+            this.btnConexion.Name = "btnConexion";
+            this.btnConexion.Size = new System.Drawing.Size(93, 23);
+            this.btnConexion.TabIndex = 2;
+            this.btnConexion.Text = "🔗 Conexión";
+            this.btnConexion.UseVisualStyleBackColor = true;
+            this.btnConexion.Click += new System.EventHandler(this.btnConexion_Click);
             // 
             // dgvLog
             // 
@@ -102,11 +101,11 @@ namespace AsistenteMigracionApp
             this.ClientSize = new System.Drawing.Size(689, 555);
             this.Controls.Add(this.btnEjecutarManualmente);
             this.Controls.Add(this.dgvLog);
-            this.Controls.Add(this.btnVerificarEstado);
+            this.Controls.Add(this.btnConexion);
             this.Controls.Add(this.lblEstadoMigracion);
             this.Controls.Add(this.panelColorIndicador);
             this.Name = "frmInicio";
-            this.Text = "Asistente de migración";
+            this.Text = "Migrador FoxPro";
             this.Load += new System.EventHandler(this.frmInicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLog)).EndInit();
             this.ResumeLayout(false);
@@ -117,7 +116,7 @@ namespace AsistenteMigracionApp
 
         private System.Windows.Forms.Label lblEstadoMigracion;
         private System.Windows.Forms.Panel panelColorIndicador;
-        private System.Windows.Forms.Button btnVerificarEstado;
+        private System.Windows.Forms.Button btnConexion;
         private System.Windows.Forms.Timer logTimer;
         private System.Windows.Forms.DataGridView dgvLog;
         private System.Windows.Forms.Timer verificacionProcesoTimer;

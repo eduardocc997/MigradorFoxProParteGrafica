@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AsistenteMigracionApp.Forms;
 using AsistenteMigracionApp.Helpers;
 
 namespace AsistenteMigracionApp
@@ -62,14 +63,10 @@ namespace AsistenteMigracionApp
             //dgvLog.Columns["Mensaje"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
-        private void btnVerificarEstado_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void VerificarEstadoEjecucionMigracion()
         {
-            btnVerificarEstado.Enabled = false;
+            btnConexion.Enabled = false;
             panelColorIndicador.BackColor = Color.Gray; //Proceso detenido
             lblEstadoMigracion.Text = "Verificando...";
 
@@ -85,7 +82,7 @@ namespace AsistenteMigracionApp
                 lblEstadoMigracion.Text = "No se está ejecutando la migración";
                 btnEjecutarManualmente.Enabled = true;
             }
-            btnVerificarEstado.Enabled = true;
+            btnConexion.Enabled = true;
         }
 
         private bool EnEjecucionMigracion()
@@ -94,5 +91,10 @@ namespace AsistenteMigracionApp
             return procesos.Length > 0;
         }
 
+        private void btnConexion_Click(object sender, EventArgs e)
+        {
+            ConexionForm conexionForm = new ConexionForm();
+            conexionForm.ShowDialog();
+        }
     }
 }
