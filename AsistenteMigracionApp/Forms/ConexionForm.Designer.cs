@@ -35,7 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tbUsuario = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbContrasenia = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbBaseDeDatos = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -108,14 +108,14 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Contraseña";
             // 
-            // tbContrasenia
+            // tbPassword
             // 
-            this.tbContrasenia.Location = new System.Drawing.Point(15, 129);
-            this.tbContrasenia.MaxLength = 200;
-            this.tbContrasenia.Name = "tbContrasenia";
-            this.tbContrasenia.PasswordChar = '*';
-            this.tbContrasenia.Size = new System.Drawing.Size(277, 20);
-            this.tbContrasenia.TabIndex = 7;
+            this.tbPassword.Location = new System.Drawing.Point(15, 129);
+            this.tbPassword.MaxLength = 200;
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '*';
+            this.tbPassword.Size = new System.Drawing.Size(277, 20);
+            this.tbPassword.TabIndex = 7;
             // 
             // label5
             // 
@@ -172,6 +172,7 @@
             this.btnGuardarConexion.TabIndex = 13;
             this.btnGuardarConexion.Text = "💾 Guardar conexión";
             this.btnGuardarConexion.UseVisualStyleBackColor = true;
+            this.btnGuardarConexion.Click += new System.EventHandler(this.btnGuardarConexion_Click);
             // 
             // label9
             // 
@@ -195,11 +196,11 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(271, 226);
+            this.btnSalir.Location = new System.Drawing.Point(364, 226);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(171, 23);
+            this.btnSalir.Size = new System.Drawing.Size(78, 23);
             this.btnSalir.TabIndex = 16;
-            this.btnSalir.Text = " ❌ Salir sin guardar";
+            this.btnSalir.Text = "❌ Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
@@ -217,7 +218,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbBaseDeDatos);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.tbContrasenia);
+            this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbUsuario);
             this.Controls.Add(this.label3);
@@ -247,7 +248,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbUsuario;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbContrasenia;
+        private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbBaseDeDatos;
         private System.Windows.Forms.Label label6;

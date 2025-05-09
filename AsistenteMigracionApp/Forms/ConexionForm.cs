@@ -1,7 +1,10 @@
-﻿using System;
+﻿using AsistenteMigracionApp.Helpers;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,7 +22,12 @@ namespace AsistenteMigracionApp.Forms
 
         private void ConexionForm_Load(object sender, EventArgs e)
         {
-
+            var datos = GestorConexionMySQL.CargarConexion();
+            tbServidor.Text = datos.Server;
+            tbPuerto.Text = datos.Port;
+            tbUsuario.Text = datos.User;
+            tbPassword.Text = datos.Password;
+            tbBaseDeDatos.Text = datos.Database;
         }
 
 
@@ -58,24 +66,41 @@ namespace AsistenteMigracionApp.Forms
 
         private void btnProbarConexion_Click(object sender, EventArgs e)
         {
-            bool ConexionExitosa = false;
-
-
-            // Aquí iría la lógica para probar la conexión a la base de datos
-
-            //ConexionExitosa = true; // Cambia esto según el resultado de tu prueba de conexión
-
-
-
-
-            if (ConexionExitosa)
+            if (ProbarConexion(tbServidor.Text, tbPuerto.Text, tbUsuario.Text, tbPassword.Text, tbBaseDeDatos.Text))
             {
                 MessageBox.Show("Conexión exitosa", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else
+        }
+
+        private bool ProbarConexion(string servidor, string puerto, string usuario, string password, string baseDatos)
+        {
+            string cadenaConexion = $"server={servidor};port={puerto};user={usuario};password={password};database={baseDatos};SslMode=none;";
+
+            try
             {
-                MessageBox.Show("Error al conectar, revise los datos de conexión", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                using (var conexion = new MySqlConnection(cadenaConexion))
+                {
+                    conexion.Open();
+                    return true;
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al conectar:\n" + ex.Message, "Fallo de conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        private void btnGuardarConexion_Click(object sender, EventArgs e)
+        {
+            GestorConexionMySQL.GuardarConexionMySQL(
+                tbServidor.Text,
+                tbPuerto.Text,
+                tbUsuario.Text,
+                tbPassword.Text,
+                tbBaseDeDatos.Text
+             );
+            MessageBox.Show("Conexión cifrada y guardada.");
         }
     }
 }

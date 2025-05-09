@@ -37,6 +37,7 @@ namespace AsistenteMigracionApp
             this.dgvLog = new System.Windows.Forms.DataGridView();
             this.verificacionProcesoTimer = new System.Windows.Forms.Timer(this.components);
             this.btnEjecutarManualmente = new System.Windows.Forms.Button();
+            this.btnConfiguracion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLog)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,12 +94,22 @@ namespace AsistenteMigracionApp
             this.btnEjecutarManualmente.Text = "▶️";
             this.btnEjecutarManualmente.UseVisualStyleBackColor = true;
             // 
+            // btnConfiguracion
+            // 
+            this.btnConfiguracion.Location = new System.Drawing.Point(111, 10);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.Size = new System.Drawing.Size(118, 23);
+            this.btnConfiguracion.TabIndex = 5;
+            this.btnConfiguracion.Text = "⚙️ Configuración";
+            this.btnConfiguracion.UseVisualStyleBackColor = true;
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(689, 555);
+            this.Controls.Add(this.btnConfiguracion);
             this.Controls.Add(this.btnEjecutarManualmente);
             this.Controls.Add(this.dgvLog);
             this.Controls.Add(this.btnConexion);
@@ -121,6 +132,7 @@ namespace AsistenteMigracionApp
         private System.Windows.Forms.DataGridView dgvLog;
         private System.Windows.Forms.Timer verificacionProcesoTimer;
         private System.Windows.Forms.Button btnEjecutarManualmente;
+        private System.Windows.Forms.Button btnConfiguracion;
     }
 }
 
